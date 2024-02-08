@@ -2,7 +2,7 @@
 reverse each word in string
  */
 
-package string.Leetcode;
+package string.Leetcode.PracticeQ;
 
 import java.util.Scanner;
 
