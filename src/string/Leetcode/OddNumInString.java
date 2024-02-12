@@ -2,7 +2,7 @@ package string.Leetcode;
 
 public class OddNumInString {
     public static void main(String[] args) {
-        String s = "523" ;
+        String s = "52683" ;
         System.out.println(largestOddNumber(s));
 
     }
