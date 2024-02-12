@@ -38,3 +38,44 @@ public class StringCompression {
         System.out.println(ans);
     }
 }
+
+
+
+/*
+
+Leet code solution
+
+
+class Solution {
+    public int compress(char[] chars) {
+       String ans = "";
+       int i = 0;
+       int j = 0;
+       while(j<chars.length) {
+           if (chars[i]==chars[j]) {
+               j++ ;
+           } else {
+               ans += chars[i];
+               int length = j-i;
+               if (length > 1) {
+                   ans += length;
+               }
+               i=j;
+           }
+
+       }
+              ans += chars[i];
+               int length = j-i;
+               if (length > 1) {
+                   ans += length;
+               }
+        for (i = 0;i<ans.length();i++) {
+            chars[i] = ans.charAt(i);
+        }
+        return ans.length();
+    }
+}
+
+
+
+ */
