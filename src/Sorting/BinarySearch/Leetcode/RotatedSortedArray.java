@@ -2,8 +2,8 @@ package Sorting.BinarySearch.Leetcode;
 
 public class RotatedSortedArray {
     public static void main(String[] args) {
-        int[] arr = {4, 5, 6, 7, 0, 1, 2};
-        int target = 7;
+        int[] arr = {3,1};
+        int target = 3;
         System.out.println(search(arr,target));
 
     }
