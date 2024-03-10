@@ -6,9 +6,9 @@ import java.util.Collections;
 
 public class KthElement {
     public static void main(String[] args) {
-        int [] arr = {1,2,3,4,5,6,7,8,9};
-        int k = 6 ;
-        int x = 9 ;
+        int [] arr = {1,2,3,4,5};
+        int k = 4 ;
+        int x = 3 ;
         System.out.println(findClosestElements(arr,k,x));
 
     }
