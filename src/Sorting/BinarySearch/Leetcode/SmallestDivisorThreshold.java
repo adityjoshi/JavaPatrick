@@ -34,7 +34,7 @@ public class SmallestDivisorThreshold {
         return d;
     }
 
-    // Binary search
+    // Binary search  time complexity => O(n * log(mx))
     static int smallestDivisor(int[] arr, int threshold) {
         int n = arr.length;
         int max = Integer.MIN_VALUE;
@@ -44,9 +44,9 @@ public class SmallestDivisorThreshold {
         int start = 1;
         int end = max;
         int divisor = - 1;
-        while (start <= end) {
+        while (start <= end) {   // log(mx)
         int mid = start + (end-start)/2 ;
-        if(isLess(mid,arr,threshold)) {
+        if(isLess(mid,arr,threshold)) {  // O(n)
             divisor = mid ;
             end = mid - 1;
         }
